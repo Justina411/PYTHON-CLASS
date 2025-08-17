@@ -35,4 +35,10 @@ quotient = num1 / num2
 #product
 Product = num1 * num2
 
-#differen
+#difference
+difference = num1 - num2
+print(f"This is the sum of two numbers: {sum}")
+print(f"This is the quotient of two numbers: {quotient}")
+print(f"This is the product of two numbers: {Product}")
+print(f"This is the difference of two numbers: {difference}")
+
