@@ -1,13 +1,13 @@
 import time
 
 """
-Countdown Timer 
+Countdown Time 
 ""
 
-This program creates a simple countdown timer that counts from 10 to 1.
+This operation creates a simple countdown timer that counts from 10 to 1.
 """
 
-print(" COUNTDOWN TIMER ")
+print(" COUNT TIMER ")
 print("Starting countdown from 10 to 1...\n")
 
 # Countdown from 10 to 1
@@ -18,4 +18,4 @@ while count > 0:
     count -= 1
 
 
-print("=== TIMER Done ===")
+print(" TIMER DONE ")
