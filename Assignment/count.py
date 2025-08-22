@@ -10,7 +10,7 @@ This operation creates a simple countdown timer that counts from 10 to 1.
 print(" COUNT TIMER ")
 print("Starting countdown from 10 to 1...\n")
 
-# Countdown from 10 to 1
+# Countdown 10 to 1
 count = 10
 while count > 0:
     print(f" {count}...")
