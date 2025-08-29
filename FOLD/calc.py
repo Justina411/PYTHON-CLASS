@@ -7,9 +7,27 @@ num2 = int(input("Number 2: "))
 print("What operation do you want to perform on the numbers?")
 operation = input("Operation: ").lower()
 
+def addition():
+    sum = num1 + num2
+    print
+
+def diff():
+    difference = num1 + num2
+    print(difference)
+
+def divide():
+    quotient = num1 + num2
+    print(quotient)
+
+def multiply():
+    multiply = num1 + num2
+    print(multiply)
+
+
 if operation == "sum":
     sum = num1 + num2 
     print(f"This is the sum of the two numbers; {sum}") #addition
+  
 
 elif operation == "difference":
     difference = num1 - num2

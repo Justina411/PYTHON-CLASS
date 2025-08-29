@@ -4,12 +4,12 @@ Yes/No Continuation Program
 
 A simple program that asks the user if they want to continue.
 The program keeps running until the user enters 'c' to stop.
-Accepts 'a' or 'c' (case-insensitive) as valid inputs.
+Accepts 'y' or 'n' (case-insensitive) as valid inputs.
 """
 
 print(" YES/NO PROGRAM ")
 print("The operation will keep asking You if You want to continue.")
-print("Enter 'a' to continue or 'c' to stop the program.\n")
+print("Enter 'y' to continue or 'n' to stop the program.\n")
 
 # Counter to track how many times the user continued
 continue_count = 0
@@ -17,24 +17,24 @@ continue_count = 0
 # Main program loop
 while True:
     # Get user input
-    user_input = input("Do you want to continue? (a/c): ").lower()
+    user_input = input("Do you want to continue? (y/n): ").lower()
     
     # Check if user wants to continue
-    if user_input == 'a':
+    if user_input == 'y':
         continue_count += 1
         print(f" Continuing... (Continued {continue_count} times)")
         print()  # Empty line for better readability
         
     # Check if user wants to stop
-    elif user_input == 'a':
+    elif user_input == 'n':
         print(f"\n Stopping the program...")
         break
         
     # invalid input
     else:
-        print(" Please enter only 'a' or 'c'!")
-        print("   'a' = yes, continue")
-        print("   'c' = no, stop the program")
+        print(" Please enter only 'y' or 'n'!")
+        print("   'y' = yes, continue")
+        print("   'n' = no, stop the program")
         print()  
 
 print(f"\n=== PROGRAM COMPLETED ===")
