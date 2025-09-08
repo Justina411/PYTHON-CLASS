@@ -1,17 +1,3 @@
-"""
-for the fourth assignment
-A Very Simple Student Grade Tracker
-
-Create a dictionary where keys are student names and values are lists of their test scores
-Add functions to:
-
-Add a new student
-Add a grade for existing student
-Calculate average grade for each student
-Find the student with highest average
-Display all students and their grades in a formatted table
-"""
-
 # Student Grade Tracker
 
 # Dictionary to store student names as keys and their grades as values (list of numbers)
@@ -40,20 +26,6 @@ def average_grade(name):
     else:
         return None  # No grades available
 
-# Function to find student with highest average
-def top_student():
-    if not students:
-        return None
-    best_student = None
-    best_avg = 0
-    for name, grades in students.items():
-        if grades:  # only check students with grades
-            avg = sum(grades) / len(grades)
-            if avg > best_avg:
-                best_avg = avg
-                best_student = name
-    return best_student, best_avg
-
 # Function to display all students and their grades in a table
 def display_all():
     if not students:
@@ -61,14 +33,13 @@ def display_all():
         return
     print("\n===== Student Grades =====")
     print(f"{'Name':<15}{'Grades':<25}{'Average':<10}")
-    print("-" * 50)
     for name, grades in students.items():
         avg = average_grade(name)
         avg_display = f"{avg:.2f}" if avg is not None else "N/A"
         print(f"{name:<15}{str(grades):<25}{avg_display:<10}")
 
 # ------------------------------
-# Example usage (you can replace this with input-based menu if you want)
+# Example usage
 
 add_student("Alice")
 add_student("Bob")
@@ -79,7 +50,3 @@ add_grade("Bob", 75)
 add_grade("Bob", 85)
 
 display_all()
-
-top = top_student()
-if top:
-    print(f"\nTop student is {top[0]} with average {top[1]:.2f}")
