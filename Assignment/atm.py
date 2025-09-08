@@ -1,3 +1,25 @@
+"""
+For the second assignment
+A Simple ATM Simulator
+
+Start with a balance of $1000
+Ask user what they want to do: check balance, deposit, or withdraw
+For deposits: add amount to balance
+For withdrawals: check if sufficient funds exist
+Display appropriate messages and updated balance
+for this one
+it will also be a console app
+just like everything else
+the atm simulator should look something like this
+ATM Menu:
+1. Check Balance
+2. Deposit
+3. Withdraw
+Choose an option: 3
+Enter withdrawal amount: $150
+Transaction successful! New balance: $850
+"""
+
 def atm_simulator():
     balance = 1000 
 
@@ -44,5 +66,5 @@ def atm_simulator():
         else:
             print("Invalid option. Please choose 1, 2, 3, or 4.")
 
-# Run the ATM simulator
+
 atm_simulator()

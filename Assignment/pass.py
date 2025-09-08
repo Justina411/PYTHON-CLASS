@@ -1,3 +1,14 @@
+"""
+for the third assignment
+Simple Password Strength Checker
+
+Ask user for a password
+Check if it meets criteria: at least 8 characters, has uppercase, lowercase, and numbers
+Use loops to count each type of character
+Keep asking until they provide a strong password
+"""
+
+
 def password_checker():
     while True:  # Keep asking until password is strong
         password = input("Enter a password: ")

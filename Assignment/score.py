@@ -1,3 +1,13 @@
+"""
+For the first assignment
+Grade Calculator
+
+Ask user for their score (0-100)
+Assign letter grades: A (90+), B (80-89), C (70-79), D (60-69), F (<60)
+Provide encouraging messages based on the grade
+Handle invalid input (scores outside 0-100 range)
+"""
+
 def grade_checker():
     while True:
         try:
