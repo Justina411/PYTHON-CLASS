@@ -82,4 +82,4 @@ display_all()
 
 top = top_student()
 if top:
-    print(f"\n🏆 Top student is {top[0]} with average {top[1]:.2f}")
+    print(f"\nTop student is {top[0]} with average {top[1]:.2f}")
